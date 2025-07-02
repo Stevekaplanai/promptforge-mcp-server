@@ -1,7 +1,7 @@
 {
   "name": "promptforge-mcp-server",
-  "version": "1.0.2",
-  "description": "Advanced AI prompt optimization MCP server with pattern management and analytics",
+  "version": "2.0.0",
+  "description": "Advanced AI prompt optimization MCP server with ML-based domain detection, templates, and analytics",
   "type": "module",
   "main": "server-stdio.js",
   "bin": {
@@ -19,7 +19,15 @@
     "prompt",
     "optimization",
     "smithery",
-    "promptforge"
+    "promptforge",
+    "domain-detection",
+    "templates",
+    "analytics",
+    "prompt-engineering",
+    "gpt",
+    "claude",
+    "marketing",
+    "automation"
   ],
   "author": "Steve Kaplan <steve@gtmvp.com>",
   "license": "MIT",

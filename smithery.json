@@ -1,34 +1,55 @@
 {
-  "name": "promptforge",
-  "displayName": "PromptForge - AI Prompt Optimizer",
-  "description": "Advanced prompt optimization server with pattern management and analytics",
-  "icon": "✨",
-  "version": "1.0.2",
+  "name": "promptforge-mcp-server",
+  "description": "Advanced AI prompt optimization with ML-based domain detection, pattern management, and analytics",
   "author": "Steve Kaplan",
   "license": "MIT",
-  "repository": "https://github.com/Stevekaplanai/promptforge-mcp-server",
-  "categories": ["ai", "productivity", "optimization"],
-  "keywords": ["prompt", "optimization", "ai", "patterns", "analytics"],
-  "runtime": "node",
-  "main": "server-stdio.js",
-  "config": {
-    "mcpifyServerUrl": {
-      "type": "string",
-      "description": "MCPify server URL for PromptForge",
-      "default": "https://agent.mcpify.ai/sse?server=14ddccd2-5cef-491b-b07c-71bdf8a94740",
-      "required": false
-    },
-    "apiKey": {
-      "type": "string",
-      "description": "API key for PromptForge services",
-      "required": false,
-      "secret": true
-    },
-    "analyticsEnabled": {
-      "type": "boolean",
-      "description": "Enable analytics tracking",
-      "default": true,
-      "required": false
-    }
+  "repository": "https://github.com/stevekaplanai/promptforge-mcp-server",
+  "version": "2.0.0",
+  "keywords": [
+    "prompt-engineering",
+    "ai-optimization",
+    "mcp-server",
+    "domain-detection",
+    "pattern-management",
+    "analytics",
+    "cpa-marketing",
+    "ai-automation",
+    "prompt-templates",
+    "chain-of-thought"
+  ],
+  "capabilities": {
+    "tools": [
+      {
+        "name": "optimize_prompt",
+        "description": "Analyzes and enhances prompts with intelligent optimization based on domain detection"
+      },
+      {
+        "name": "manage_patterns",
+        "description": "Create, update, delete, or retrieve domain-specific optimization patterns"
+      },
+      {
+        "name": "track_analytics",
+        "description": "Track and analyze prompt optimization performance metrics"
+      }
+    ]
+  },
+  "features": [
+    "ML-based automatic domain detection",
+    "Multi-domain optimization patterns",
+    "Advanced analytics and metrics tracking",
+    "Chain-of-thought reasoning support",
+    "Output format customization",
+    "Template system for common use cases",
+    "Feedback-based learning system",
+    "Confidence scoring for optimizations"
+  ],
+  "domains": [
+    "programming",
+    "cpa-marketing",
+    "ai-automation",
+    "general"
+  ],
+  "requirements": {
+    "node": ">=18.0.0"
   }
 }
