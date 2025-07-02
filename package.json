@@ -5,7 +5,7 @@
   "type": "module",
   "main": "server-stdio.js",
   "bin": {
-    "promptforge-mcp": "./server-stdio.js"
+    "promptforge-mcp": "server-stdio.js"
   },
   "scripts": {
     "start": "node server-stdio.js",
