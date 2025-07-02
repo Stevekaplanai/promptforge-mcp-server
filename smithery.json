@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "author": "Steve Kaplan",
   "license": "MIT",
-  "repository": "https://github.com/yourusername/promptforge-mcp-server",
+  "repository": "https://github.com/stevekaplanai/promptforge-mcp-server",
   "categories": ["ai", "productivity", "optimization"],
   "keywords": ["prompt", "optimization", "ai", "patterns", "analytics"],
   "config": {

@@ -25,7 +25,7 @@ npx @smithery/cli install promptforge
 ### Manual Installation
 
 ```bash
-git clone https://github.com/yourusername/promptforge-mcp-server
+git clone https://github.com/stevekaplanai/promptforge-mcp-server
 cd promptforge-mcp-server
 npm install
 ```
@@ -98,4 +98,4 @@ MIT © Steve Kaplan
 
 ## Support
 
-For issues and feature requests, please visit the [GitHub repository](https://github.com/yourusername/promptforge-mcp-server).
+For issues and feature requests, please visit the [GitHub repository](https://github.com/stevekaplanai/promptforge-mcp-server).

@@ -1,5 +1,5 @@
 {
-  "name": "@stevekaplan/promptforge-mcp-server",
+  "name": "promptforge-mcp-server",
   "version": "1.0.0",
   "description": "Advanced AI prompt optimization MCP server with pattern management and analytics",
   "type": "module",
@@ -22,15 +22,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stevekaplan/promptforge-mcp-server.git"
+    "url": "git+https://github.com/stevekaplanai/promptforge-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/stevekaplan/promptforge-mcp-server/issues"
+    "url": "https://github.com/stevekaplanai/promptforge-mcp-server/issues"
   },
-  "homepage": "https://github.com/stevekaplan/promptforge-mcp-server#readme",
+  "homepage": "https://github.com/stevekaplanai/promptforge-mcp-server#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
-    "@smithery/sdk": "^0.6.11",
+    "@smithery/sdk": "^1.5.2",
     "dotenv": "^16.4.7",
     "eventsource": "^2.0.2"
   },
