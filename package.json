@@ -1,0 +1,19 @@
+{
+  "name": "promptforge-mcp-server",
+  "version": "1.0.0",
+  "description": "PromptForge - Advanced Prompt Optimization Server for MCP",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@smithery/sdk": "^0.1.0",
+    "eventsource": "^2.0.2",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
