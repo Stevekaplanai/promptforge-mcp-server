@@ -1,18 +1,48 @@
 {
-  "name": "promptforge-mcp-server",
+  "name": "@stevekaplan/promptforge-mcp-server",
   "version": "1.0.0",
-  "description": "PromptForge - Advanced Prompt Optimization Server for MCP",
-  "main": "server.js",
+  "description": "Advanced AI prompt optimization MCP server with pattern management and analytics",
   "type": "module",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "prompt",
+    "optimization",
+    "smithery",
+    "promptforge"
+  ],
+  "author": "Steve Kaplan <steve@gtmvp.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevekaplan/promptforge-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevekaplan/promptforge-mcp-server/issues"
+  },
+  "homepage": "https://github.com/stevekaplan/promptforge-mcp-server#readme",
   "dependencies": {
-    "@smithery/sdk": "^0.1.0",
-    "eventsource": "^2.0.2",
-    "dotenv": "^16.3.1"
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@smithery/sdk": "^0.6.11",
+    "dotenv": "^16.4.7",
+    "eventsource": "^2.0.2"
   },
+  "smithery": {
+    "serverPath": "server.js"
+  },
+  "files": [
+    "server.js",
+    "smithery.json",
+    "README.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=18.0.0"
   }

@@ -1,0 +1,32 @@
+{
+  "name": "promptforge",
+  "displayName": "PromptForge - AI Prompt Optimizer",
+  "description": "Advanced prompt optimization server with pattern management and analytics",
+  "icon": "✨",
+  "version": "1.0.0",
+  "author": "Steve Kaplan",
+  "license": "MIT",
+  "repository": "https://github.com/yourusername/promptforge-mcp-server",
+  "categories": ["ai", "productivity", "optimization"],
+  "keywords": ["prompt", "optimization", "ai", "patterns", "analytics"],
+  "config": {
+    "mcpifyServerUrl": {
+      "type": "string",
+      "description": "MCPify server URL for PromptForge",
+      "default": "https://agent.mcpify.ai/sse?server=14ddccd2-5cef-491b-b07c-71bdf8a94740",
+      "required": false
+    },
+    "apiKey": {
+      "type": "string",
+      "description": "API key for PromptForge services",
+      "required": false,
+      "secret": true
+    },
+    "analyticsEnabled": {
+      "type": "boolean",
+      "description": "Enable analytics tracking",
+      "default": true,
+      "required": false
+    }
+  }
+}
