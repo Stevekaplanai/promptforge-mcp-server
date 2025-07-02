@@ -1,4 +1,5 @@
 # PromptForge MCP Server
+[![smithery badge](https://smithery.ai/badge/@Stevekaplanai/promptforge-mcp-server)](https://smithery.ai/server/@Stevekaplanai/promptforge-mcp-server)
 
 ✨ **Advanced AI Prompt Optimization with Pattern Management and Analytics**
 
@@ -16,10 +17,18 @@ PromptForge is a Model Context Protocol (MCP) server that enhances AI prompts th
 
 ## Installation
 
+### Installing via Smithery
+
+To install PromptForge for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Stevekaplanai/promptforge-mcp-server):
+
+```bash
+npx -y @smithery/cli install @Stevekaplanai/promptforge-mcp-server --client claude
+```
+
 ### Via Smithery (Recommended)
 
 ```bash
-npx @smithery/cli install promptforge
+npx -y @smithery/cli install promptforge
 ```
 
 ### Manual Installation
