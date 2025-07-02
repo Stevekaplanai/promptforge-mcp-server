@@ -3,7 +3,7 @@
   "displayName": "PromptForge - AI Prompt Optimizer",
   "description": "Advanced prompt optimization server with pattern management and analytics",
   "icon": "✨",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Steve Kaplan",
   "license": "MIT",
   "repository": "https://github.com/Stevekaplanai/promptforge-mcp-server",
