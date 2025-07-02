@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 
-import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
-import { server as promptForgeServer } from './server.js';
+import { StdioTransport } from '@modelcontextprotocol/sdk/transport/stdio.js';
+import { createMcpServer } from './server.js';
 
-// Start the server
-const transport = new StdioServerTransport();
+// Quick startup for Smithery deployment
+const transport = new StdioTransport();
+const server = createMcpServer({});
 
-promptForgeServer.connect(transport).then(() => {
-  console.error('PromptForge MCP Server 2.0 started successfully');
-}).catch((error) => {
-  console.error('Failed to start PromptForge MCP Server:', error);
-  process.exit(1);
-});
+transport.handle((request) => server.handle(request));
+
+// Minimal startup message
+console.error('[PromptForge] Starting stdio server...');

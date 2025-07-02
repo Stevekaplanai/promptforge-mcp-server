@@ -1,0 +1,21 @@
+{
+  "name": "promptforge-mcp-server",
+  "version": "2.0.1",
+  "description": "Advanced AI prompt optimization with ML-based domain detection",
+  "runtime": "nodejs",
+  "timeout": 10000,
+  "healthcheck": {
+    "path": "/health",
+    "interval": 30,
+    "timeout": 5000
+  },
+  "environment": {
+    "NODE_ENV": "production",
+    "ANALYTICS_ENABLED": "true"
+  },
+  "startup": {
+    "lazy": true,
+    "preload": false,
+    "warmup": false
+  }
+}

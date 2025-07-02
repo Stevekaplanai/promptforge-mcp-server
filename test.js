@@ -1,15 +1,17 @@
 // test.js - Simple test for PromptForge MCP Server
 import { PromptForge } from './server.js';
 
-console.log('Testing PromptForge 2.0...\n');
+console.log('Testing PromptForge 2.0.1...\n');
 
 const forge = new PromptForge();
+// Initialize the forge
+forge.initialize();
 
 // Test 1: Basic optimization
 console.log('Test 1: Basic Optimization');
 const result1 = forge.optimizePrompt('Write a function to sort an array');
 console.log('Original:', result1.original);
-console.log('Optimized:', result1.optimized);
+console.log('Optimized (truncated):', result1.optimized.substring(0, 100) + '...');
 console.log('Domain:', result1.metadata.detectedDomain);
 console.log('Confidence:', result1.confidence);
 console.log('Modifications:', result1.modifications.length);

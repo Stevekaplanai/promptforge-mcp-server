@@ -1,12 +1,18 @@
-# PromptForge MCP Server 2.0
+# PromptForge MCP Server 2.0.1
 
 An advanced AI prompt optimization Model Context Protocol (MCP) server designed for sophisticated prompt engineering with ML-based domain detection, pattern management, and analytics.
 
-![PromptForge Logo](https://img.shields.io/badge/PromptForge-2.0-blue)
+![PromptForge Logo](https://img.shields.io/badge/PromptForge-2.0.1-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/promptforge-mcp-server.svg)](https://www.npmjs.com/package/promptforge-mcp-server)
 
-## 🚀 What's New in 2.0
+## 🚀 What's New in 2.0.1
+
+### Bug Fixes
+- Fixed Smithery deployment timeout with lazy loading implementation
+- Optimized server startup for better deployment compatibility
+
+### From 2.0
 
 - **ML-Based Domain Detection**: Intelligent automatic detection of prompt domains
 - **Advanced Pattern Management**: Create, update, and manage optimization patterns

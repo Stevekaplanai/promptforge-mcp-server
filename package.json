@@ -1,6 +1,6 @@
 {
   "name": "promptforge-mcp-server",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Advanced AI prompt optimization MCP server with ML-based domain detection, templates, and analytics",
   "type": "module",
   "main": "server-stdio.js",
@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node server-stdio.js",
     "dev": "node --watch server-stdio.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "keywords": [
     "mcp",
@@ -49,6 +49,7 @@
     "server-stdio.js",
     "server.js",
     "smithery.json",
+    ".smitheryrc",
     "README.md",
     "LICENSE"
   ],
