@@ -1,0 +1,7 @@
+name: promptforge-mcp
+description: AI-powered prompt optimization MCP server
+runtime: container
+config:
+  transport:
+    type: http
+    port: 8000

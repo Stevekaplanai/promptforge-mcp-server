@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log
+.env
+.env.local
+.env.*.local
+.git/
+.gitignore
+README.md
+DEPLOY_TO_MCPIFY.md
+SETUP_INSTRUCTIONS.md
+test-*.js
+validate-*.js
+*.log
+.DS_Store
+Thumbs.db

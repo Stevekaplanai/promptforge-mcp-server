@@ -1,0 +1,24 @@
+{
+  "name": "promptforge-mcp",
+  "version": "1.0.0",
+  "description": "Intelligent prompt optimization MCP server",
+  "main": "smithery-final.js",
+  "scripts": {
+    "start": "node smithery-final.js",
+    "dev": "nodemon server.js",
+    "test": "node test-tools.js"
+  },
+  "keywords": ["mcp", "prompt", "optimization", "ai"],
+  "author": "Steve Kaplan",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
