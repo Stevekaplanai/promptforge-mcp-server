@@ -99,6 +99,15 @@ const server = http.createServer((req, res) => {
         
         // Handle JSON-RPC methods
         switch (method) {
+          case 'ping':
+            res.writeHead(200);
+            res.end(JSON.stringify({
+              jsonrpc: '2.0',
+              result: {},
+              id: id
+            }));
+            break;
+            
           case 'initialize':
             res.writeHead(200);
             res.end(JSON.stringify({
