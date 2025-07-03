@@ -1,12 +1,19 @@
 #!/usr/bin/env node
 
-// PromptForge MCP Server - Production Ready for Smithery
+// PromptForge MCP Server - MCP Protocol Compliant
 console.log('[INIT] Starting PromptForge MCP server...');
 
 const http = require('http');
 
+// Server information
+const SERVER_INFO = {
+  name: 'promptforge-mcp',
+  version: '1.0.0',
+  description: 'AI-powered prompt optimization MCP server'
+};
+
 // Tool definitions
-const tools = [
+const TOOLS = [
   {
     name: 'optimize_prompt',
     description: 'Analyzes and enhances a user prompt by applying optimization patterns',
@@ -93,11 +100,30 @@ const server = http.createServer((req, res) => {
         // Handle JSON-RPC methods
         switch (method) {
           case 'initialize':
+            res.writeHead(200);
+            res.end(JSON.stringify({
+              jsonrpc: '2.0',
+              result: {
+                protocolVersion: '2024-11-05',
+                capabilities: {
+                  tools: {},
+                  resources: {},
+                  prompts: {},
+                  logging: {}
+                },
+                serverInfo: SERVER_INFO
+              },
+              id: id
+            }));
+            break;
+            
           case 'tools/list':
             res.writeHead(200);
             res.end(JSON.stringify({
               jsonrpc: '2.0',
-              result: { tools },
+              result: { 
+                tools: TOOLS 
+              },
               id: id
             }));
             break;
@@ -153,29 +179,50 @@ function handleToolCall(params, id, res) {
     switch (name) {
       case 'optimize_prompt':
         result = {
-          optimizedPrompt: args.prompt + ' [Optimized for clarity and effectiveness]',
-          confidence: 0.85,
-          modifications: [
-            'Enhanced clarity',
-            'Improved structure',
-            'Added context'
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                optimizedPrompt: args.prompt + ' [Optimized for clarity and effectiveness]',
+                confidence: 0.85,
+                modifications: [
+                  'Enhanced clarity',
+                  'Improved structure',
+                  'Added context'
+                ]
+              }, null, 2)
+            }
           ]
         };
         break;
         
       case 'manage_patterns':
         result = {
-          success: true,
-          action: args.action,
-          message: `Pattern ${args.action} completed successfully`
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                success: true,
+                action: args.action,
+                message: `Pattern ${args.action} completed successfully`
+              }, null, 2)
+            }
+          ]
         };
         break;
         
       case 'track_analytics':
         result = {
-          success: true,
-          action: args.action,
-          timestamp: new Date().toISOString()
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                success: true,
+                action: args.action,
+                timestamp: new Date().toISOString()
+              }, null, 2)
+            }
+          ]
         };
         break;
         
@@ -219,6 +266,7 @@ const HOST = '0.0.0.0'; // Important: Bind to all interfaces
 server.listen(PORT, HOST, () => {
   console.log(`[SUCCESS] PromptForge MCP server listening on ${HOST}:${PORT}`);
   console.log('[INFO] Server is ready to accept connections');
+  console.log('[INFO] Protocol version: 2024-11-05');
 });
 
 // Handle server errors
