@@ -5,14 +5,14 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install ALL dependencies (not just production)
+# Install dependencies
 RUN npm ci
 
-# Copy source code
+# Copy all source files
 COPY . .
 
-# Expose port
+# Expose port (important for container networking)
 EXPOSE 8000
 
-# Start server
-CMD ["node", "smithery-final.js"]
+# Use the minimal server for now
+CMD ["node", "smithery-minimal.js"]
