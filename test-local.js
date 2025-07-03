@@ -15,7 +15,7 @@ function testEndpoint(method, expectedStatus = 200) {
 
     const options = {
       hostname: 'localhost',
-      port: 8000,
+      port: 8001,
       path: '/',
       method: 'POST',
       headers: {
